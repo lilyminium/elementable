@@ -6,11 +6,9 @@ on:
   # Both are tracked here to keep legacy and new codes working
   push:
     branches:
-      - "master"
       - "main"
   pull_request:
     branches:
-      - "master"
       - "main"
   schedule:
     # Nightly tests run on master by default:
@@ -26,6 +24,7 @@ jobs:
       matrix:
         os: [macOS-latest, ubuntu-latest, windows-latest]
         python-version: [3.7, 3.8, 3.9]
+        environment: [minimal_environment, full_environment]
 
     steps:
     - uses: actions/checkout@v1
@@ -59,6 +58,12 @@ jobs:
         python -m pip install . --no-deps
         conda list
 
+    - name: check_setup
+        run: |
+          # Check OS and python setup
+          echo "OS: ${OS_NAME}"
+          which python
+          conda list
 
     - name: Run tests
 
@@ -66,7 +71,7 @@ jobs:
       shell: bash -l {0}
 
       run: |
-        pytest -v --cov=elementary --cov-report=xml --color=yes elementary/tests/
+        pytest -n 4 -v --cov=elementary --cov-report=xml --color=yes elementary/tests/
 
     - name: CodeCov
       uses: codecov/codecov-action@v1
