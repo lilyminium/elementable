@@ -9,9 +9,19 @@ Welcome to pyelementary's documentation!
 Elementary is *another* elements package defined in Python.
 It is written to be usable with a number of different unit systems and classes.
 At its most minimal, it has no dependencies outside the main Python library.
-However, Elementary can be combined with units packages and
-fun subclasses such as Pydantic.
+However, Elementary can be combined with units packages such as OpenFF-Units,
+and fun subclasses such as Pydantic.
 
+
+------------
+Installation
+------------
+
+Elementary can be installed via pip.
+
+.. code-block:: bash
+
+   pip install pyelementary
 
 
 .. toctree::
@@ -19,7 +29,7 @@ fun subclasses such as Pydantic.
    :caption: Contents:
 
    getting_started
-
+   customizing
 
 
 Indices and tables
