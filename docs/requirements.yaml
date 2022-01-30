@@ -4,9 +4,20 @@ dependencies:
     # Base depends
   - python
   - pip
+  
+  # docs
+  - ipython
+  # - jupyter
+  # - nbsphinx
+  - sphinx > 2.0
 
+  # optional
+  - openmm
+  - openff-units
+  - unyt
+  - pydantic
 
-
-    # Pip-only installs
-  #- pip:
-
+  - pip:
+      - sphinx_rtd_theme
+      - sphinxcontrib-bibtex
+      - sphinx-sitemap
