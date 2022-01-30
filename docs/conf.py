@@ -13,7 +13,7 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 
 # Incase the project was not installed
-import pyelementary
+import elementable
 import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
@@ -21,7 +21,7 @@ sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'pyelementary'
+project = 'elementable'
 copyright = ("2022, Lily Wang. Project structure based on the "
              "Computational Molecular Science Python Cookiecutter version 1.6")
 author = 'Lily Wang'
@@ -157,8 +157,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'pyelementary.tex', 'pyelementary Documentation',
-     'pyelementary', 'manual'),
+    (master_doc, 'elementable.tex', 'elementable Documentation',
+     'elementable', 'manual'),
 ]
 
 
@@ -167,7 +167,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'pyelementary', 'pyelementary Documentation',
+    (master_doc, 'elementable', 'elementable Documentation',
      [author], 1)
 ]
 
@@ -178,8 +178,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'pyelementary', 'pyelementary Documentation',
-     author, 'pyelementary', ' Yet another elements package',
+    (master_doc, 'elementable', 'elementable Documentation',
+     author, 'elementable', ' Yet another elements package',
      'Miscellaneous'),
 ]
 

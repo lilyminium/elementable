@@ -1,7 +1,7 @@
 """ Yet another elements package"""
 
 # Add imports here
-from .pyelementary import *
+from .elementable import *
 
 # Handle versioneer
 from ._version import get_versions

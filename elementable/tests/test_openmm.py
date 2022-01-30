@@ -1,15 +1,15 @@
 import pytest
 
-from pyelementary import Elementary
+from elementable import Elementable
 
-from .base import BaseTestElementary
+from .base import BaseTestElementable
 
 unit = pytest.importorskip("openmm.unit")
 
 
-class TestOpenMMElementary(BaseTestElementary):
+class TestOpenMMElementable(BaseTestElementable):
 
-    element_class = Elementary(
+    element_class = Elementable(
         units=dict(
             mass=unit.amu,
             covalent_radius=unit.angstrom

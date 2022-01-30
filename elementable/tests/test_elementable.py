@@ -1,13 +1,13 @@
 
 from tkinter import E
 import pytest
-from pyelementary import Elements, Elementary
+from elementable import Elements, Elementable
 
-from .base import BaseTestElementary
+from .base import BaseTestElementable
 from .datafiles import VEGETABLES_JSON
 
 
-class TestStandardElementary(BaseTestElementary):
+class TestStandardElementable(BaseTestElementable):
     element_class = Elements
 
     @pytest.mark.parametrize("mass", [119.90220163, 119.9022])
@@ -22,11 +22,11 @@ class TestStandardElementary(BaseTestElementary):
         assert atomic_numbers == [24, 46, 50, 51, 53]
 
 
-class TestCustomElementary:
+class TestCustomElementable:
 
     @pytest.fixture(scope="class")
     def element_class(self):
-        return Elementary(json_file=VEGETABLES_JSON, key_attr="name")
+        return Elementable(json_file=VEGETABLES_JSON, key_attr="name")
 
     def test_create(self, element_class):
         assert element_class.n_elements == 3

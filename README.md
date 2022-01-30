@@ -1,25 +1,25 @@
-pyelementary
+elementable
 ==============================
 Yet another elements package
 
 [//]: # (Badges)
-[![GitHub Actions Build Status](https://github.com/lilyminium/pyelementary/workflows/CI/badge.svg)](https://github.com/lilyminium/pyelementary/actions?query=workflow%3ACI)
-[![codecov](https://codecov.io/gh/lilyminium/pyelementary/branch/master/graph/badge.svg)](https://codecov.io/gh/lilyminium/pyelementary/branch/main)
-[![PyPI version](https://badge.fury.io/py/pyelementary.svg)](https://pypi.org/project/pyelementary/)
-[![Documentation Status](https://readthedocs.org/projects/pyelementary/badge/?version=latest)](https://pyelementary.readthedocs.io/en/latest/?badge=latest)
+[![GitHub Actions Build Status](https://github.com/lilyminium/elementable/workflows/CI/badge.svg)](https://github.com/lilyminium/elementable/actions?query=workflow%3ACI)
+[![codecov](https://codecov.io/gh/lilyminium/elementable/branch/master/graph/badge.svg)](https://codecov.io/gh/lilyminium/elementable/branch/main)
+[![PyPI version](https://badge.fury.io/py/elementable.svg)](https://pypi.org/project/elementable/)
+[![Documentation Status](https://readthedocs.org/projects/elementable/badge/?version=latest)](https://elementable.readthedocs.io/en/latest/?badge=latest)
 
 
-Elementary is *another* elements package defined in Python. It is written to be usable with a number of different unit systems and classes. At its most minimal, it has no dependencies outside the main Python library. However, the real point of the package is to automagically work with a number of units classes and be generally flexible.
+Elementable is *another* elements package defined in Python. It is written to be usable with a number of different unit systems and classes. At its most minimal, it has no dependencies outside the main Python library. However, the real point of the package is to automagically work with a number of units classes and be generally flexible.
 
 ### Usage
 
 #### Standard
 
-You can use Elementary immediately by importing the standard `Element` class. Please see the documentation for more. Each element is defined uniquely to allow for `is` comparisons.
+You can use Elementable immediately by importing the standard `Element` class. Please see the documentation for more. Each element is defined uniquely to allow for `is` comparisons.
 
 ```ipython
 
-In [1]: import pyelementary as elm
+In [1]: import elementable as elm
 
 In [2]: h = elm.Elements(atomic_number=1)
 

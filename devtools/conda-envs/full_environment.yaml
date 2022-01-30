@@ -1,4 +1,4 @@
-name: pyelementary
+name: elementable
 channels:
   - conda-forge
   - defaults

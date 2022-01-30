@@ -3,7 +3,7 @@
 Customizing elements
 ====================
 
-Element generation can be customized a number of ways by creating a new class with :class:`Elementary()`.
+Element generation can be customized a number of ways by creating a new class with :class:`Elementable()`.
 You can change:
 
 * whether attributes have units attached
@@ -24,10 +24,10 @@ the JSON file used.
 
 .. ipython:: python
 
-    import pyelementary as elm
+    import elementable as elm
     from openff.units import unit as offunit
 
-    OpenFFElements = elm.Elementary(
+    OpenFFElements = elm.Elementable(
         units=dict(
             mass=offunit.amu,
             covalent_radius=offunit.angstrom
@@ -84,7 +84,7 @@ You can create a custom representation with another class, such as a Pydantic Ba
 
     from pydantic import BaseModel
 
-    PydElements = elm.Elementary(
+    PydElements = elm.Elementable(
         element_cls=BaseModel
     )
     h = PydElements(atomic_number=1)
@@ -101,7 +101,7 @@ You can make it more or less precise.
 
 .. ipython:: python
 
-    LessPreciseElement = elm.Elementary(
+    LessPreciseElement = elm.Elementable(
         decimals=0
     )
     LessPreciseElement(mass=1)
@@ -111,7 +111,7 @@ You can make it more or less precise.
 JSON source
 -----------
 
-By default, Elementary creates elements from a file packaged in the library.
+By default, Elementable creates elements from a file packaged in the library.
 This may not contain the best values for you.
 You can pass in ``json_file`` to create Elements from a different source.
 These can have *arbitrary* attributes.
@@ -119,8 +119,8 @@ For a silly example:
 
 .. ipython:: python
 
-    from pyelementary.tests.datafiles import VEGETABLES_JSON
-    Vegetables = elm.Elementary(json_file=VEGETABLES_JSON)
+    from elementable.tests.datafiles import VEGETABLES_JSON
+    Vegetables = elm.Elementable(json_file=VEGETABLES_JSON)
     print(Vegetables(name="carrot"))
     print(Vegetables.registry.name)
 
