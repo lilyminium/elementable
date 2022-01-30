@@ -15,6 +15,7 @@ For immediate usage, import :class:`Element`. Elements can be retrieved with :fu
     h = elm.Element(atomic_number=1)
     print(h)
 
+
 :func:`Element()` accepts all attributes defined on an :class:`Element`, including floating point numbers.
 In the standard formulation, these get rounded to 4 decimal places. For custom behavior, see below.
 
@@ -64,11 +65,13 @@ the JSON file used.
         )
     )
 
+
 Each element has now units defined on the object.
 
 .. ipython:: python
 
     offh = OpenFFElements(atomic_number=1)
+
 
 However, units are **not** included in searching as keys to the Element registry.
 That's because many of the packages are not hashable.
@@ -77,13 +80,17 @@ That's because many of the packages are not hashable.
 
     OpenFFElements.registry.mass[1.0078]
 
+
 Nonetheless, you can search for elements with unit-associated attributes.
 
 .. ipython:: python
 
     OpenFFElements(mass=1.0078 * offunit.amu)
     
+
 You can even search with *different*, but compatible, units.
+
+.. ipython:: python
 
     OpenFFElements(mass=1.673532838315319e-24 * offunit.g)
 
@@ -97,6 +104,7 @@ NamedTuples were chosen as the Element base class as they are natively JSON-seri
 
     import json
     json.dumps(h)
+
 
 However, this representation may not be fantastic.
 You can create a custom representation with another class, such as a Pydantic BaseModel.
@@ -142,3 +150,7 @@ For a silly example:
     Vegetables = elm.Elementary(json_file=VEGETABLES_JSON)
     print(Vegetables(name="carrot"))
     print(Vegetables.registry.name)
+
+
+
+.. _qcelemental: https://docs.qcarchive.molssi.org/projects/QCElemental/en/stable/
