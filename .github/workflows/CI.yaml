@@ -41,11 +41,11 @@ jobs:
     - uses: conda-incubator/setup-miniconda@v2
       with:
         python-version: ${{ matrix.python-version }}
-        environment-file: devtools/conda-envs/test_env.yaml
+        environment-file: devtools/conda-envs/${{ matrix.environment }}.yaml
 
         channels: conda-forge,defaults
 
-        activate-environment: test
+        activate-environment: elementary
         auto-update-conda: false
         auto-activate-base: false
         show-channel-urls: true
@@ -59,11 +59,11 @@ jobs:
         conda list
 
     - name: check_setup
-        run: |
-          # Check OS and python setup
-          echo "OS: ${OS_NAME}"
-          which python
-          conda list
+      run: |
+        # Check OS and python setup
+        echo "OS: ${OS_NAME}"
+        which python
+        conda list
 
     - name: Run tests
 
