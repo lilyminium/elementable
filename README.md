@@ -4,7 +4,7 @@ Yet another elements package
 
 [//]: # (Badges)
 [![GitHub Actions Build Status](https://github.com/lilyminium/pyelementary/workflows/CI/badge.svg)](https://github.com/lilyminium/pyelementary/actions?query=workflow%3ACI)
-[![codecov](https://codecov.io/gh/lilyminium/pyelementary/branch/master/graph/badge.svg)](https://codecov.io/gh/lilyminium/pyelementary/branch/master)
+[![codecov](https://codecov.io/gh/lilyminium/pyelementary/branch/master/graph/badge.svg)](https://codecov.io/gh/lilyminium/pyelementary/branch/main)
 [![PyPI version](https://badge.fury.io/py/pyelementary.svg)](https://pypi.org/project/pyelementary/)
 [![Documentation Status](https://readthedocs.org/projects/pyelementary/badge/?version=latest)](https://pyelementary.readthedocs.io/en/latest/?badge=latest)
 
