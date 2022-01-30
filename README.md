@@ -6,6 +6,7 @@ Yet another elements package
 [![GitHub Actions Build Status](https://github.com/lilyminium/pyelementary/workflows/CI/badge.svg)](https://github.com/lilyminium/pyelementary/actions?query=workflow%3ACI)
 [![codecov](https://codecov.io/gh/lilyminium/pyelementary/branch/master/graph/badge.svg)](https://codecov.io/gh/lilyminium/pyelementary/branch/master)
 [![PyPI version](https://badge.fury.io/py/pyelementary.svg)](https://pypi.org/project/pyelementary/)
+[![Documentation Status](https://readthedocs.org/projects/pyelementary/badge/?version=latest)](https://pyelementary.readthedocs.io/en/latest/?badge=latest)
 
 
 Elementary is *another* elements package defined in Python. It is written to be usable with a number of different unit systems and classes. At its most minimal, it has no dependencies outside the main Python library. However, the real point of the package is to automagically work with a number of units classes and be generally flexible.
