@@ -7,7 +7,7 @@ Yet another elements package
 [![codecov](https://codecov.io/gh/lilyminium/elementary/branch/master/graph/badge.svg)](https://codecov.io/gh/lilyminium/elementary/branch/master)
 
 
-Elementary is *another* elements package defined in Python. It is written to be usable with a number of different unit systems and classes. At its most minimal, it has no dependencies outside the main Python library.
+Elementary is *another* elements package defined in Python. It is written to be usable with a number of different unit systems and classes. At its most minimal, it has no dependencies outside the main Python library. However, the real point of the package is to automagically work with a number of units classes and be generally flexible.
 
 ### Usage
 
