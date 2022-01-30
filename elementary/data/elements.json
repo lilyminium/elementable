@@ -1,0 +1,1064 @@
+[
+  {
+    "name": "",
+    "symbol": "*",
+    "atomic_number": 0,
+    "mass": 0.0,
+    "period": 0,
+    "group": 0,
+    "covalent_radius": null
+  },
+  {
+    "name": "hydrogen",
+    "symbol": "H",
+    "atomic_number": 1,
+    "mass": 1.00782503223,
+    "period": 1,
+    "group": 1,
+    "covalent_radius": 0.31
+  },
+  {
+    "name": "helium",
+    "symbol": "He",
+    "atomic_number": 2,
+    "mass": 4.00260325413,
+    "period": 1,
+    "group": 18,
+    "covalent_radius": 0.28
+  },
+  {
+    "name": "lithium",
+    "symbol": "Li",
+    "atomic_number": 3,
+    "mass": 7.0160034366,
+    "period": 2,
+    "group": 1,
+    "covalent_radius": 1.28
+  },
+  {
+    "name": "beryllium",
+    "symbol": "Be",
+    "atomic_number": 4,
+    "mass": 9.012183065,
+    "period": 2,
+    "group": 2,
+    "covalent_radius": 0.96
+  },
+  {
+    "name": "boron",
+    "symbol": "B",
+    "atomic_number": 5,
+    "mass": 11.00930536,
+    "period": 2,
+    "group": 13,
+    "covalent_radius": 0.84
+  },
+  {
+    "name": "carbon",
+    "symbol": "C",
+    "atomic_number": 6,
+    "mass": 12.0,
+    "period": 2,
+    "group": 14,
+    "covalent_radius": 0.76
+  },
+  {
+    "name": "nitrogen",
+    "symbol": "N",
+    "atomic_number": 7,
+    "mass": 14.00307400443,
+    "period": 2,
+    "group": 15,
+    "covalent_radius": 0.71
+  },
+  {
+    "name": "oxygen",
+    "symbol": "O",
+    "atomic_number": 8,
+    "mass": 15.99491461957,
+    "period": 2,
+    "group": 16,
+    "covalent_radius": 0.66
+  },
+  {
+    "name": "fluorine",
+    "symbol": "F",
+    "atomic_number": 9,
+    "mass": 18.99840316273,
+    "period": 2,
+    "group": 17,
+    "covalent_radius": 0.57
+  },
+  {
+    "name": "neon",
+    "symbol": "Ne",
+    "atomic_number": 10,
+    "mass": 19.9924401762,
+    "period": 2,
+    "group": 18,
+    "covalent_radius": 0.58
+  },
+  {
+    "name": "sodium",
+    "symbol": "Na",
+    "atomic_number": 11,
+    "mass": 22.989769282,
+    "period": 3,
+    "group": 1,
+    "covalent_radius": 1.66
+  },
+  {
+    "name": "magnesium",
+    "symbol": "Mg",
+    "atomic_number": 12,
+    "mass": 23.985041697,
+    "period": 3,
+    "group": 2,
+    "covalent_radius": 1.41
+  },
+  {
+    "name": "aluminum",
+    "symbol": "Al",
+    "atomic_number": 13,
+    "mass": 26.98153853,
+    "period": 3,
+    "group": 13,
+    "covalent_radius": 1.21
+  },
+  {
+    "name": "silicon",
+    "symbol": "Si",
+    "atomic_number": 14,
+    "mass": 27.97692653465,
+    "period": 3,
+    "group": 14,
+    "covalent_radius": 1.11
+  },
+  {
+    "name": "phosphorus",
+    "symbol": "P",
+    "atomic_number": 15,
+    "mass": 30.97376199842,
+    "period": 3,
+    "group": 15,
+    "covalent_radius": 1.07
+  },
+  {
+    "name": "sulfur",
+    "symbol": "S",
+    "atomic_number": 16,
+    "mass": 31.9720711744,
+    "period": 3,
+    "group": 16,
+    "covalent_radius": 1.05
+  },
+  {
+    "name": "chlorine",
+    "symbol": "Cl",
+    "atomic_number": 17,
+    "mass": 34.968852682,
+    "period": 3,
+    "group": 17,
+    "covalent_radius": 1.02
+  },
+  {
+    "name": "argon",
+    "symbol": "Ar",
+    "atomic_number": 18,
+    "mass": 39.9623831237,
+    "period": 3,
+    "group": 18,
+    "covalent_radius": 1.06
+  },
+  {
+    "name": "potassium",
+    "symbol": "K",
+    "atomic_number": 19,
+    "mass": 38.9637064864,
+    "period": 4,
+    "group": 1,
+    "covalent_radius": 2.03
+  },
+  {
+    "name": "calcium",
+    "symbol": "Ca",
+    "atomic_number": 20,
+    "mass": 39.962590863,
+    "period": 4,
+    "group": 2,
+    "covalent_radius": 1.76
+  },
+  {
+    "name": "scandium",
+    "symbol": "Sc",
+    "atomic_number": 21,
+    "mass": 44.95590828,
+    "period": 4,
+    "group": 3,
+    "covalent_radius": 1.7
+  },
+  {
+    "name": "titanium",
+    "symbol": "Ti",
+    "atomic_number": 22,
+    "mass": 47.94794198,
+    "period": 4,
+    "group": 4,
+    "covalent_radius": 1.6
+  },
+  {
+    "name": "vanadium",
+    "symbol": "V",
+    "atomic_number": 23,
+    "mass": 50.94395704,
+    "period": 4,
+    "group": 5,
+    "covalent_radius": 1.53
+  },
+  {
+    "name": "chromium",
+    "symbol": "Cr",
+    "atomic_number": 24,
+    "mass": 51.94050623,
+    "period": 4,
+    "group": 6,
+    "covalent_radius": 1.39
+  },
+  {
+    "name": "manganese",
+    "symbol": "Mn",
+    "atomic_number": 25,
+    "mass": 54.93804391,
+    "period": 4,
+    "group": 7,
+    "covalent_radius": 1.61
+  },
+  {
+    "name": "iron",
+    "symbol": "Fe",
+    "atomic_number": 26,
+    "mass": 55.93493633,
+    "period": 4,
+    "group": 8,
+    "covalent_radius": 1.52
+  },
+  {
+    "name": "cobalt",
+    "symbol": "Co",
+    "atomic_number": 27,
+    "mass": 58.93319429,
+    "period": 4,
+    "group": 9,
+    "covalent_radius": 1.5
+  },
+  {
+    "name": "nickel",
+    "symbol": "Ni",
+    "atomic_number": 28,
+    "mass": 57.93534241,
+    "period": 4,
+    "group": 10,
+    "covalent_radius": 1.24
+  },
+  {
+    "name": "copper",
+    "symbol": "Cu",
+    "atomic_number": 29,
+    "mass": 62.92959772,
+    "period": 4,
+    "group": 11,
+    "covalent_radius": 1.32
+  },
+  {
+    "name": "zinc",
+    "symbol": "Zn",
+    "atomic_number": 30,
+    "mass": 63.92914201,
+    "period": 4,
+    "group": 12,
+    "covalent_radius": 1.22
+  },
+  {
+    "name": "gallium",
+    "symbol": "Ga",
+    "atomic_number": 31,
+    "mass": 68.9255735,
+    "period": 4,
+    "group": 13,
+    "covalent_radius": 1.22
+  },
+  {
+    "name": "germanium",
+    "symbol": "Ge",
+    "atomic_number": 32,
+    "mass": 73.921177761,
+    "period": 4,
+    "group": 14,
+    "covalent_radius": 1.2
+  },
+  {
+    "name": "arsenic",
+    "symbol": "As",
+    "atomic_number": 33,
+    "mass": 74.92159457,
+    "period": 4,
+    "group": 15,
+    "covalent_radius": 1.19
+  },
+  {
+    "name": "selenium",
+    "symbol": "Se",
+    "atomic_number": 34,
+    "mass": 79.9165218,
+    "period": 4,
+    "group": 16,
+    "covalent_radius": 1.2
+  },
+  {
+    "name": "bromine",
+    "symbol": "Br",
+    "atomic_number": 35,
+    "mass": 78.9183376,
+    "period": 4,
+    "group": 17,
+    "covalent_radius": 1.2
+  },
+  {
+    "name": "krypton",
+    "symbol": "Kr",
+    "atomic_number": 36,
+    "mass": 83.9114977282,
+    "period": 4,
+    "group": 18,
+    "covalent_radius": 1.16
+  },
+  {
+    "name": "rubidium",
+    "symbol": "Rb",
+    "atomic_number": 37,
+    "mass": 84.9117897379,
+    "period": 5,
+    "group": 1,
+    "covalent_radius": 2.2
+  },
+  {
+    "name": "strontium",
+    "symbol": "Sr",
+    "atomic_number": 38,
+    "mass": 87.9056125,
+    "period": 5,
+    "group": 2,
+    "covalent_radius": 1.95
+  },
+  {
+    "name": "yttrium",
+    "symbol": "Y",
+    "atomic_number": 39,
+    "mass": 88.9058403,
+    "period": 5,
+    "group": 3,
+    "covalent_radius": 1.9
+  },
+  {
+    "name": "zirconium",
+    "symbol": "Zr",
+    "atomic_number": 40,
+    "mass": 89.9046977,
+    "period": 5,
+    "group": 4,
+    "covalent_radius": 1.75
+  },
+  {
+    "name": "niobium",
+    "symbol": "Nb",
+    "atomic_number": 41,
+    "mass": 92.906373,
+    "period": 5,
+    "group": 5,
+    "covalent_radius": 1.64
+  },
+  {
+    "name": "molybdenum",
+    "symbol": "Mo",
+    "atomic_number": 42,
+    "mass": 97.90540482,
+    "period": 5,
+    "group": 6,
+    "covalent_radius": 1.54
+  },
+  {
+    "name": "technetium",
+    "symbol": "Tc",
+    "atomic_number": 43,
+    "mass": 97.9072124,
+    "period": 5,
+    "group": 7,
+    "covalent_radius": 1.47
+  },
+  {
+    "name": "ruthenium",
+    "symbol": "Ru",
+    "atomic_number": 44,
+    "mass": 101.9043441,
+    "period": 5,
+    "group": 8,
+    "covalent_radius": 1.46
+  },
+  {
+    "name": "rhodium",
+    "symbol": "Rh",
+    "atomic_number": 45,
+    "mass": 102.905498,
+    "period": 5,
+    "group": 9,
+    "covalent_radius": 1.42
+  },
+  {
+    "name": "palladium",
+    "symbol": "Pd",
+    "atomic_number": 46,
+    "mass": 105.9034804,
+    "period": 5,
+    "group": 10,
+    "covalent_radius": 1.39
+  },
+  {
+    "name": "silver",
+    "symbol": "Ag",
+    "atomic_number": 47,
+    "mass": 106.9050916,
+    "period": 5,
+    "group": 11,
+    "covalent_radius": 1.45
+  },
+  {
+    "name": "cadmium",
+    "symbol": "Cd",
+    "atomic_number": 48,
+    "mass": 113.90336509,
+    "period": 5,
+    "group": 12,
+    "covalent_radius": 1.44
+  },
+  {
+    "name": "indium",
+    "symbol": "In",
+    "atomic_number": 49,
+    "mass": 114.903878776,
+    "period": 5,
+    "group": 13,
+    "covalent_radius": 1.42
+  },
+  {
+    "name": "tin",
+    "symbol": "Sn",
+    "atomic_number": 50,
+    "mass": 119.90220163,
+    "period": 5,
+    "group": 14,
+    "covalent_radius": 1.39
+  },
+  {
+    "name": "antimony",
+    "symbol": "Sb",
+    "atomic_number": 51,
+    "mass": 120.903812,
+    "period": 5,
+    "group": 15,
+    "covalent_radius": 1.39
+  },
+  {
+    "name": "tellurium",
+    "symbol": "Te",
+    "atomic_number": 52,
+    "mass": 129.906222748,
+    "period": 5,
+    "group": 16,
+    "covalent_radius": 1.38
+  },
+  {
+    "name": "iodine",
+    "symbol": "I",
+    "atomic_number": 53,
+    "mass": 126.9044719,
+    "period": 5,
+    "group": 17,
+    "covalent_radius": 1.39
+  },
+  {
+    "name": "xenon",
+    "symbol": "Xe",
+    "atomic_number": 54,
+    "mass": 131.9041550856,
+    "period": 5,
+    "group": 18,
+    "covalent_radius": 1.4
+  },
+  {
+    "name": "cesium",
+    "symbol": "Cs",
+    "atomic_number": 55,
+    "mass": 132.905451961,
+    "period": 6,
+    "group": 1,
+    "covalent_radius": 2.44
+  },
+  {
+    "name": "barium",
+    "symbol": "Ba",
+    "atomic_number": 56,
+    "mass": 137.905247,
+    "period": 6,
+    "group": 2,
+    "covalent_radius": 2.15
+  },
+  {
+    "name": "lanthanum",
+    "symbol": "La",
+    "atomic_number": 57,
+    "mass": 138.9063563,
+    "period": 6,
+    "group": null,
+    "covalent_radius": 2.07
+  },
+  {
+    "name": "cerium",
+    "symbol": "Ce",
+    "atomic_number": 58,
+    "mass": 139.9054431,
+    "period": 6,
+    "group": null,
+    "covalent_radius": 2.04
+  },
+  {
+    "name": "praseodymium",
+    "symbol": "Pr",
+    "atomic_number": 59,
+    "mass": 140.9076576,
+    "period": 6,
+    "group": null,
+    "covalent_radius": 2.03
+  },
+  {
+    "name": "neodymium",
+    "symbol": "Nd",
+    "atomic_number": 60,
+    "mass": 141.907729,
+    "period": 6,
+    "group": null,
+    "covalent_radius": 2.01
+  },
+  {
+    "name": "promethium",
+    "symbol": "Pm",
+    "atomic_number": 61,
+    "mass": 144.9127559,
+    "period": 6,
+    "group": null,
+    "covalent_radius": 1.99
+  },
+  {
+    "name": "samarium",
+    "symbol": "Sm",
+    "atomic_number": 62,
+    "mass": 151.9197397,
+    "period": 6,
+    "group": null,
+    "covalent_radius": 1.98
+  },
+  {
+    "name": "europium",
+    "symbol": "Eu",
+    "atomic_number": 63,
+    "mass": 152.921238,
+    "period": 6,
+    "group": null,
+    "covalent_radius": 1.98
+  },
+  {
+    "name": "gadolinium",
+    "symbol": "Gd",
+    "atomic_number": 64,
+    "mass": 157.9241123,
+    "period": 6,
+    "group": null,
+    "covalent_radius": 1.96
+  },
+  {
+    "name": "terbium",
+    "symbol": "Tb",
+    "atomic_number": 65,
+    "mass": 158.9253547,
+    "period": 6,
+    "group": null,
+    "covalent_radius": 1.94
+  },
+  {
+    "name": "dysprosium",
+    "symbol": "Dy",
+    "atomic_number": 66,
+    "mass": 163.9291819,
+    "period": 6,
+    "group": null,
+    "covalent_radius": 1.92
+  },
+  {
+    "name": "holmium",
+    "symbol": "Ho",
+    "atomic_number": 67,
+    "mass": 164.9303288,
+    "period": 6,
+    "group": null,
+    "covalent_radius": 1.92
+  },
+  {
+    "name": "erbium",
+    "symbol": "Er",
+    "atomic_number": 68,
+    "mass": 165.9302995,
+    "period": 6,
+    "group": null,
+    "covalent_radius": 1.89
+  },
+  {
+    "name": "thulium",
+    "symbol": "Tm",
+    "atomic_number": 69,
+    "mass": 168.9342179,
+    "period": 6,
+    "group": null,
+    "covalent_radius": 1.9
+  },
+  {
+    "name": "ytterbium",
+    "symbol": "Yb",
+    "atomic_number": 70,
+    "mass": 173.9388664,
+    "period": 6,
+    "group": null,
+    "covalent_radius": 1.87
+  },
+  {
+    "name": "lutetium",
+    "symbol": "Lu",
+    "atomic_number": 71,
+    "mass": 174.9407752,
+    "period": 6,
+    "group": null,
+    "covalent_radius": 1.87
+  },
+  {
+    "name": "hafnium",
+    "symbol": "Hf",
+    "atomic_number": 72,
+    "mass": 179.946557,
+    "period": 6,
+    "group": 4,
+    "covalent_radius": 1.75
+  },
+  {
+    "name": "tantalum",
+    "symbol": "Ta",
+    "atomic_number": 73,
+    "mass": 180.9479958,
+    "period": 6,
+    "group": 5,
+    "covalent_radius": 1.7
+  },
+  {
+    "name": "tungsten",
+    "symbol": "W",
+    "atomic_number": 74,
+    "mass": 183.95093092,
+    "period": 6,
+    "group": 6,
+    "covalent_radius": 1.62
+  },
+  {
+    "name": "rhenium",
+    "symbol": "Re",
+    "atomic_number": 75,
+    "mass": 186.9557501,
+    "period": 6,
+    "group": 7,
+    "covalent_radius": 1.51
+  },
+  {
+    "name": "osmium",
+    "symbol": "Os",
+    "atomic_number": 76,
+    "mass": 191.961477,
+    "period": 6,
+    "group": 8,
+    "covalent_radius": 1.44
+  },
+  {
+    "name": "iridium",
+    "symbol": "Ir",
+    "atomic_number": 77,
+    "mass": 192.9629216,
+    "period": 6,
+    "group": 9,
+    "covalent_radius": 1.41
+  },
+  {
+    "name": "platinum",
+    "symbol": "Pt",
+    "atomic_number": 78,
+    "mass": 194.9647917,
+    "period": 6,
+    "group": 10,
+    "covalent_radius": 1.36
+  },
+  {
+    "name": "gold",
+    "symbol": "Au",
+    "atomic_number": 79,
+    "mass": 196.96656879,
+    "period": 6,
+    "group": 11,
+    "covalent_radius": 1.36
+  },
+  {
+    "name": "mercury",
+    "symbol": "Hg",
+    "atomic_number": 80,
+    "mass": 201.9706434,
+    "period": 6,
+    "group": 12,
+    "covalent_radius": 1.32
+  },
+  {
+    "name": "thallium",
+    "symbol": "Tl",
+    "atomic_number": 81,
+    "mass": 204.9744278,
+    "period": 6,
+    "group": 13,
+    "covalent_radius": 1.45
+  },
+  {
+    "name": "lead",
+    "symbol": "Pb",
+    "atomic_number": 82,
+    "mass": 207.9766525,
+    "period": 6,
+    "group": 14,
+    "covalent_radius": 1.46
+  },
+  {
+    "name": "bismuth",
+    "symbol": "Bi",
+    "atomic_number": 83,
+    "mass": 208.9803991,
+    "period": 6,
+    "group": 15,
+    "covalent_radius": 1.48
+  },
+  {
+    "name": "polonium",
+    "symbol": "Po",
+    "atomic_number": 84,
+    "mass": 208.9824308,
+    "period": 6,
+    "group": 16,
+    "covalent_radius": 1.4
+  },
+  {
+    "name": "astatine",
+    "symbol": "At",
+    "atomic_number": 85,
+    "mass": 209.9871479,
+    "period": 6,
+    "group": 17,
+    "covalent_radius": 1.5
+  },
+  {
+    "name": "radon",
+    "symbol": "Rn",
+    "atomic_number": 86,
+    "mass": 222.0175782,
+    "period": 6,
+    "group": 18,
+    "covalent_radius": 1.5
+  },
+  {
+    "name": "francium",
+    "symbol": "Fr",
+    "atomic_number": 87,
+    "mass": 223.019736,
+    "period": 7,
+    "group": 1,
+    "covalent_radius": 2.6
+  },
+  {
+    "name": "radium",
+    "symbol": "Ra",
+    "atomic_number": 88,
+    "mass": 226.0254103,
+    "period": 7,
+    "group": 2,
+    "covalent_radius": 2.21
+  },
+  {
+    "name": "actinium",
+    "symbol": "Ac",
+    "atomic_number": 89,
+    "mass": 227.0277523,
+    "period": 7,
+    "group": null,
+    "covalent_radius": 2.15
+  },
+  {
+    "name": "thorium",
+    "symbol": "Th",
+    "atomic_number": 90,
+    "mass": 232.0380558,
+    "period": 7,
+    "group": null,
+    "covalent_radius": 2.06
+  },
+  {
+    "name": "protactinium",
+    "symbol": "Pa",
+    "atomic_number": 91,
+    "mass": 231.0358842,
+    "period": 7,
+    "group": null,
+    "covalent_radius": 2.0
+  },
+  {
+    "name": "uranium",
+    "symbol": "U",
+    "atomic_number": 92,
+    "mass": 238.0507884,
+    "period": 7,
+    "group": null,
+    "covalent_radius": 1.96
+  },
+  {
+    "name": "neptunium",
+    "symbol": "Np",
+    "atomic_number": 93,
+    "mass": 237.0481736,
+    "period": 7,
+    "group": null,
+    "covalent_radius": 1.9
+  },
+  {
+    "name": "plutonium",
+    "symbol": "Pu",
+    "atomic_number": 94,
+    "mass": 244.0642053,
+    "period": 7,
+    "group": null,
+    "covalent_radius": 1.87
+  },
+  {
+    "name": "americium",
+    "symbol": "Am",
+    "atomic_number": 95,
+    "mass": 243.0613813,
+    "period": 7,
+    "group": null,
+    "covalent_radius": 1.8
+  },
+  {
+    "name": "curium",
+    "symbol": "Cm",
+    "atomic_number": 96,
+    "mass": 247.0703541,
+    "period": 7,
+    "group": null,
+    "covalent_radius": 1.69
+  },
+  {
+    "name": "berkelium",
+    "symbol": "Bk",
+    "atomic_number": 97,
+    "mass": 247.0703073,
+    "period": 7,
+    "group": null,
+    "covalent_radius": null
+  },
+  {
+    "name": "californium",
+    "symbol": "Cf",
+    "atomic_number": 98,
+    "mass": 251.0795886,
+    "period": 7,
+    "group": null,
+    "covalent_radius": null
+  },
+  {
+    "name": "einsteinium",
+    "symbol": "Es",
+    "atomic_number": 99,
+    "mass": 252.08298,
+    "period": 7,
+    "group": null,
+    "covalent_radius": null
+  },
+  {
+    "name": "fermium",
+    "symbol": "Fm",
+    "atomic_number": 100,
+    "mass": 257.0951061,
+    "period": 7,
+    "group": null,
+    "covalent_radius": null
+  },
+  {
+    "name": "mendelevium",
+    "symbol": "Md",
+    "atomic_number": 101,
+    "mass": 258.0984315,
+    "period": 7,
+    "group": null,
+    "covalent_radius": null
+  },
+  {
+    "name": "nobelium",
+    "symbol": "No",
+    "atomic_number": 102,
+    "mass": 259.10103,
+    "period": 7,
+    "group": null,
+    "covalent_radius": null
+  },
+  {
+    "name": "lawrencium",
+    "symbol": "Lr",
+    "atomic_number": 103,
+    "mass": 266.11983,
+    "period": 7,
+    "group": null,
+    "covalent_radius": null
+  },
+  {
+    "name": "rutherfordium",
+    "symbol": "Rf",
+    "atomic_number": 104,
+    "mass": 267.12179,
+    "period": 7,
+    "group": 4,
+    "covalent_radius": null
+  },
+  {
+    "name": "dubnium",
+    "symbol": "Db",
+    "atomic_number": 105,
+    "mass": 268.12567,
+    "period": 7,
+    "group": 5,
+    "covalent_radius": null
+  },
+  {
+    "name": "seaborgium",
+    "symbol": "Sg",
+    "atomic_number": 106,
+    "mass": 271.13393,
+    "period": 7,
+    "group": 6,
+    "covalent_radius": null
+  },
+  {
+    "name": "bohrium",
+    "symbol": "Bh",
+    "atomic_number": 107,
+    "mass": 270.13336,
+    "period": 7,
+    "group": 7,
+    "covalent_radius": null
+  },
+  {
+    "name": "hassium",
+    "symbol": "Hs",
+    "atomic_number": 108,
+    "mass": 269.13375,
+    "period": 7,
+    "group": 8,
+    "covalent_radius": null
+  },
+  {
+    "name": "meitnerium",
+    "symbol": "Mt",
+    "atomic_number": 109,
+    "mass": 278.15631,
+    "period": 7,
+    "group": 9,
+    "covalent_radius": null
+  },
+  {
+    "name": "darmstadtium",
+    "symbol": "Ds",
+    "atomic_number": 110,
+    "mass": 281.16451,
+    "period": 7,
+    "group": 10,
+    "covalent_radius": null
+  },
+  {
+    "name": "roentgenium",
+    "symbol": "Rg",
+    "atomic_number": 111,
+    "mass": 282.16912,
+    "period": 7,
+    "group": 11,
+    "covalent_radius": null
+  },
+  {
+    "name": "copernicium",
+    "symbol": "Cn",
+    "atomic_number": 112,
+    "mass": 285.17712,
+    "period": 7,
+    "group": 12,
+    "covalent_radius": null
+  },
+  {
+    "name": "nihonium",
+    "symbol": "Nh",
+    "atomic_number": 113,
+    "mass": 286.18221,
+    "period": 7,
+    "group": 13,
+    "covalent_radius": null
+  },
+  {
+    "name": "flerovium",
+    "symbol": "Fl",
+    "atomic_number": 114,
+    "mass": 289.19042,
+    "period": 7,
+    "group": 14,
+    "covalent_radius": null
+  },
+  {
+    "name": "moscovium",
+    "symbol": "Mc",
+    "atomic_number": 115,
+    "mass": 289.19363,
+    "period": 7,
+    "group": 15,
+    "covalent_radius": null
+  },
+  {
+    "name": "livermorium",
+    "symbol": "Lv",
+    "atomic_number": 116,
+    "mass": 293.20449,
+    "period": 7,
+    "group": 16,
+    "covalent_radius": null
+  },
+  {
+    "name": "tennessine",
+    "symbol": "Ts",
+    "atomic_number": 117,
+    "mass": 294.21046,
+    "period": 7,
+    "group": 17,
+    "covalent_radius": null
+  }
+]

@@ -1,0 +1,23 @@
+name: elementary
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+    # Base depends
+  - python
+  - pip
+
+    # Testing
+  - hypothesis
+  - pytest
+  - pytest-xdist
+  - pytest-cov
+  - codecov
+
+  # optional
+  - openmm
+  - openff-units
+  - unyt
+  - pydantic
+
+

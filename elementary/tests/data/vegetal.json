@@ -1,0 +1,19 @@
+[
+    {
+        "name": "carrot",
+        "color": "orange",
+        "n_leaves": 3,
+        "weight": 100
+    },
+    {
+        "name": "parsnip",
+        "color": "white",
+        "n_leaves": 2
+    },
+    {
+        "name": "tuber",
+        "color": "white",
+        "n_leaves": 0,
+        "weight": 100
+    }
+]
