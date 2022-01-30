@@ -48,7 +48,7 @@ class BaseTestElementary:
 
     def test_get_period(self):
         pd5 = self.element_class(period=5)
-        assert isinstance(pd5[0], self.element_class)
+        # assert isinstance(pd5[0], self.element_class)
         assert len(pd5) == 18
 
     def test_get_period_error(self):
@@ -61,6 +61,7 @@ class BaseTestElementary:
 
         indium = indium[0]
         assert indium.atomic_number == 49
+        assert indium is self.element_class.In
 
     def test_get_period_and_group_missing(self):
         no_matches = self.element_class(period=111, group=1)

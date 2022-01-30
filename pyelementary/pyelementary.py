@@ -6,7 +6,7 @@ import json
 
 from .exceptions import InvalidElementError, ElementaryError
 
-__all__ = ["Elementary", "Element"]
+__all__ = ["Elementary", "Elements"]
 
 
 NoneType = type(None)
@@ -43,6 +43,8 @@ class Elementary(type):
         element_cls: Type = NamedTuple,
         json_file: str = resource_filename(__name__, "data/elements.json"),
         decimals: Optional[int] = 4,
+        key_attr: str = "symbol",
+        key_transform: Callable = lambda x: x if x != "*" else "X",
     ):
 
         # ===== load elements from json =====
@@ -120,10 +122,15 @@ class Elementary(type):
 
             clean_registries[regname] = regvalue
 
+        # create container
         sorted_attrs = sorted(registries)
         Registry = namedtuple("Registry", sorted_attrs)
         proxies = [MappingProxyType(clean_registries[k]) for k in sorted_attrs]
-        Element.registry = Registry(*proxies)
+
+        keys = [key_transform(getattr(el, key_attr)) for el in all_elements]
+        Elements = namedtuple("Elements", keys)
+
+        Elements.registry = Registry(*proxies)
 
         # ===== overwrite __new__ and __init__ =====
 
@@ -166,16 +173,14 @@ class Elementary(type):
                 element_group = [x for x in element_group if x in sub_group]
             return tuple(sorted(element_group, key=lambda x: x.atomic_number))
 
-        def _element_init(self, **kwargs):
-            pass
-
         n_elements = len(all_elements)
 
-        Element.__new__ = _element_new
-        Element.__init__ = _element_init
-        Element.n_elements = n_elements
+        Elements.__call__ = _element_new
+        Elements.n_elements = n_elements
 
-        return Element
+        Elements = Elements(*all_elements)
+
+        return Elements
 
     def __init__(
         self,
@@ -191,4 +196,4 @@ class Elementary(type):
         pass
 
 
-Element = Elementary()
+Elements = Elementary()
