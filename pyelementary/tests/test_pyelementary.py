@@ -1,14 +1,14 @@
 
 from tkinter import E
 import pytest
-from pyelementary import Element, Elementary
+from pyelementary import Elements, Elementary
 
 from .base import BaseTestElementary
 from .datafiles import VEGETABLES_JSON
 
 
 class TestStandardElementary(BaseTestElementary):
-    element_class = Element
+    element_class = Elements
 
     @pytest.mark.parametrize("mass", [119.90220163, 119.9022])
     def test_get_mass_single(self, mass):
@@ -26,7 +26,7 @@ class TestCustomElementary:
 
     @pytest.fixture(scope="class")
     def element_class(self):
-        return Elementary(json_file=VEGETABLES_JSON)
+        return Elementary(json_file=VEGETABLES_JSON, key_attr="name")
 
     def test_create(self, element_class):
         assert element_class.n_elements == 3

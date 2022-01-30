@@ -10,7 +10,7 @@ For immediate usage, import :class:`Element`. Elements can be retrieved with :fu
 .. ipython:: python
 
     import pyelementary as elm
-    h = elm.Element(atomic_number=1)
+    h = elm.Elements(atomic_number=1)
     print(h)
 
 
@@ -19,7 +19,7 @@ In the standard formulation, these get rounded to 4 decimal places.
 
 .. ipython:: python
 
-    elm.Element(mass=1.0078)
+    elm.Elements(mass=1.0078)
 
 
 
