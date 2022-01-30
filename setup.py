@@ -1,5 +1,5 @@
 """
-elementary
+pyelementary
  Yet another elements package
 """
 import sys
@@ -21,7 +21,7 @@ except:
 
 setup(
     # Self-descriptive entries which should always be present
-    name='elementary',
+    name='pyelementary',
     author='Lily Wang',
     author_email='lily@minium.com.au',
     description=short_description,

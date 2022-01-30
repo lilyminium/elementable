@@ -1,6 +1,6 @@
 
 from .base import BaseTestElementary
-from elementary import Elementary
+from pyelementary import Elementary
 
 import pytest
 units = pytest.importorskip("openff.units")

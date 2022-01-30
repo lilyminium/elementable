@@ -11,7 +11,7 @@ For immediate usage, import :class:`Element`. Elements can be retrieved with :fu
 
 .. ipython:: python
 
-    import elementary as elm
+    import pyelementary as elm
     h = elm.Element(atomic_number=1)
     print(h)
 
@@ -138,7 +138,7 @@ For a silly example:
 
 .. ipython:: python
 
-    from elementary.tests.datafiles import VEGETABLES_JSON
+    from pyelementary.tests.datafiles import VEGETABLES_JSON
     Vegetables = elm.Elementary(json_file=VEGETABLES_JSON)
     print(Vegetables(name="carrot"))
     print(Vegetables.registry.name)

@@ -2,7 +2,7 @@
 import pytest
 from hypothesis import given, strategies as st
 
-from elementary.exceptions import ElementaryError, InvalidElementError
+from pyelementary.exceptions import ElementaryError, InvalidElementError
 
 
 class BaseTestElementary:

@@ -1,7 +1,7 @@
 
 from tkinter import E
 import pytest
-from elementary import Element, Elementary
+from pyelementary import Element, Elementary
 
 from .base import BaseTestElementary
 from .datafiles import VEGETABLES_JSON

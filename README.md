@@ -1,10 +1,10 @@
-elementary
+pyelementary
 ==============================
 Yet another elements package
 
 [//]: # (Badges)
-[![GitHub Actions Build Status](https://github.com/lilyminium/elementary/workflows/CI/badge.svg)](https://github.com/lilyminium/elementary/actions?query=workflow%3ACI)
-[![codecov](https://codecov.io/gh/lilyminium/elementary/branch/master/graph/badge.svg)](https://codecov.io/gh/lilyminium/elementary/branch/master)
+[![GitHub Actions Build Status](https://github.com/lilyminium/pyelementary/workflows/CI/badge.svg)](https://github.com/lilyminium/pyelementary/actions?query=workflow%3ACI)
+[![codecov](https://codecov.io/gh/lilyminium/pyelementary/branch/master/graph/badge.svg)](https://codecov.io/gh/lilyminium/pyelementary/branch/master)
 
 
 Elementary is *another* elements package defined in Python. It is written to be usable with a number of different unit systems and classes. At its most minimal, it has no dependencies outside the main Python library. However, the real point of the package is to automagically work with a number of units classes and be generally flexible.
@@ -17,7 +17,7 @@ You can use Elementary immediately by importing the standard `Element` class. Pl
 
 ```ipython
 
-In [1]: import elementary as elm
+In [1]: import pyelementary as elm
 
 In [2]: h = elm.Element(atomic_number=1)
 

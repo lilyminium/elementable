@@ -55,7 +55,7 @@ jobs:
 
         channels: conda-forge,defaults
 
-        activate-environment: elementary
+        activate-environment: pyelementary
         auto-update-conda: false
         auto-activate-base: false
         show-channel-urls: true
@@ -81,7 +81,7 @@ jobs:
       shell: bash -l {0}
 
       run: |
-        pytest -n 4 -v --cov=elementary --cov-report=xml --color=yes elementary/tests/
+        pytest -n 4 -v --cov=pyelementary --cov-report=xml --color=yes pyelementary/tests/
 
     - name: CodeCov
       uses: codecov/codecov-action@v1

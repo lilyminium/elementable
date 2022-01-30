@@ -1,6 +1,6 @@
 import pytest
 
-from elementary import Elementary
+from pyelementary import Elementary
 
 from .base import BaseTestElementary
 
