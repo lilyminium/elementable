@@ -40,6 +40,7 @@ Each element has now units defined on the object.
 .. ipython:: python
 
     offh = OpenFFElements(atomic_number=1)
+    offh
 
 
 However, units are **not** included in searching as keys to the Element registry.
@@ -84,10 +85,10 @@ You can create a custom representation with another class, such as a Pydantic Ba
 
     from pydantic import BaseModel
 
-    PydElements = elm.Elementable(
+    PydanticElements = elm.Elementable(
         element_cls=BaseModel
     )
-    h = PydElements(atomic_number=1)
+    h = PydanticElements(atomic_number=1)
     h.json()
 
 
