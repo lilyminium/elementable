@@ -2,6 +2,8 @@
 from .base import BaseTestElementable
 from elementable import Elementable
 
+from numpy.testing import assert_allclose
+
 import pytest
 units = pytest.importorskip("openff.units")
 unit = units.unit
@@ -24,6 +26,7 @@ class TestOpenFFElementable(BaseTestElementable):
     def test_get_mass_single(self, mass):
         el = self.element_class(mass=mass)
         assert el.atomic_number == 50
+        assert_allclose(el.mass.m_as(unit.amu), 119.90220163)
 
     @pytest.mark.parametrize("covalent_radius", [
         1.39 * unit.angstrom,

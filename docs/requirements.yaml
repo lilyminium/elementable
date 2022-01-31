@@ -14,9 +14,9 @@ dependencies:
   - sphinx > 2.0
 
   # optional
-  - openmm
+  # - openmm
   - openff-units
-  - unyt
+  # - unyt
   - pydantic
 
   - pip:
