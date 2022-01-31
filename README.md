@@ -9,15 +9,18 @@ Yet another elements package
 [![Documentation Status](https://readthedocs.org/projects/elementable/badge/?version=latest)](https://elementable.readthedocs.io/en/latest/?badge=latest)
 
 
-Elementable is *another* elements package defined in Python. It is written to be usable with a number of different unit systems and classes. At its most minimal, it has no dependencies outside the main Python library. However, the real point of the package is to automagically work with a number of units, base classes, custom data, and be generally flexible.
+Elementable is *another* elements package defined in Python.
+It is written to be usable with a number of different unit systems and classes.
+At its most minimal, it has no dependencies outside the main Python library.
+However, the real point of the package is to automagically work with a number of units, base classes, custom data, and be generally flexible.
 
 ### Usage
 
 #### Standard
 
-You can use Elementable immediately by importing the standard `Element` class. Please see the [documentation for information about customization](https://elementable.readthedocs.io/en/latest/customizing.html). Each element is defined uniquely to allow for `is` comparisons.
+You can use Elementable immediately by importing the standard `Elements` class. Please see the [documentation for information about customization](https://elementable.readthedocs.io/en/latest/customizing.html). Each element is defined uniquely to allow for `is` comparisons.
 
-```ipython
+```python
 
 In [1]: import elementable as elm
 
@@ -44,23 +47,23 @@ Supported attributes include:
 * group
 * covalent_radius (in angstrom)
 
-Each attribute can be used to obtain an Element or list of Elements. Floats are rounded to the nearest 4 decimals when using `Element()`.
+Each attribute can be used to obtain an Element or list of Elements. Floats are rounded to the nearest 4 decimals when using `Elements()`.
 
-```ipython
+```python
 In [5]: elm.Elements(mass=1.0078)
 Out[5]: Element(name='hydrogen', symbol='H', atomic_number=1, mass=1.00782503223, period=1, group=1, covalent_radius=0.31)
 ```
 
-Using `Element()` to retrieve an element can be quite slow, as a number of different cases are checked. If your search is more defined, you can access registries for each attribute directly at `Element.registry`. Keys for all floats are rounded to 4 decimal places.
+Using `Elements()` to retrieve an element can be quite slow, as a number of different cases are checked. If your search is more defined, you can access registries for each attribute directly at `Elements.registry`. Keys for all floats are rounded to 4 decimal places.
 
-```ipython
+```python
 In [6]: elm.Elements.registry.mass[1.0078]
 Out[6]: Element(name='hydrogen', symbol='H', atomic_number=1, mass=1.00782503223, period=1, group=1, covalent_radius=0.31)
 ```
 
 For attributes where multiple elements have the same value, a sorted tuple of elements is returned.
 
-```ipython
+```python
 In [8]: elm.Elements(period=5)
 Out[8]:
 (Element(name='rubidium', symbol='Rb', atomic_number=37, mass=84.9117897379, period=5, group=1, covalent_radius=2.2),
@@ -85,7 +88,7 @@ Out[8]:
 
 These can be narrowed down with multiple keyword arguments.
 
-```ipython
+```python
 In [9]: elm.Elements(period=5, group=17)
 Out[9]: (Element(name='iodine', symbol='I', atomic_number=53, mass=126.9044719, period=5, group=17, covalent_radius=1.39),)
 ```

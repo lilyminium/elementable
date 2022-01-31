@@ -5,7 +5,7 @@ Elementable comes with standard elements defined, but there are a number of ways
 Please see :ref:`customizing-ref` for more.
 
 
-For immediate usage, import :class:`Element`. Elements can be retrieved with :func:`Element()`:
+For immediate usage, import :class:`Elements`. Elements can be retrieved with :func:`Elements()`:
 
 .. ipython:: python
 
@@ -14,13 +14,32 @@ For immediate usage, import :class:`Element`. Elements can be retrieved with :fu
     print(h)
 
 
-:func:`Element()` accepts all attributes defined on an :class:`Element`, including floating point numbers.
+:func:`Elements()` accepts all attributes defined on an :class:`Element`, including floating point numbers.
 In the standard formulation, these get rounded to 4 decimal places.
 
 .. ipython:: python
 
     elm.Elements(mass=1.0078)
 
+
+Each standard element is also available as an attribute.
+
+.. ipython:: python
+
+    elm.Elements.Na
+
+Elements can also be directly retrieved from various registries of attributes.
+These can return single elements, such as from the atomic number:
+
+.. ipython:: python
+
+    elm.Elements.registry.atomic_number[1]
+
+Or multiple elements, such as from the period.
+
+.. ipython:: python
+
+    elm.Elements.registry.period[1]
 
 
 ------

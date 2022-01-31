@@ -175,7 +175,7 @@ class Elementable(type):
                         k, v, registries.__getitem__,
                     )
                 element_group = [x for x in element_group if x in sub_group]
-            return tuple(sorted(element_group, key=lambda x: x.atomic_number))
+            return tuple(element_group)
 
         initial_new = Element.__new__
 
@@ -188,7 +188,7 @@ class Elementable(type):
             n_possibilities = len(possibilities)
             if n_possibilities == 1:
                 return possibilities[0]
-            if not n_possibilities or n_possibilities > 1:
+            if not n_possibilities:
                 return initial_new(cls, *args, **kwargs)
             return possibilities
 
