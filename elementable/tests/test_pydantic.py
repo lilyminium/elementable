@@ -52,8 +52,12 @@ class TestPydanticElementable(BaseTestElementable):
 class TestUnitPydanticElementable(BaseTestElementable):
     from openff.units import unit
 
+    class Model(pydantic.BaseModel):
+        class Config:
+            arbitrary_types_allowed = True
+
     element_class = Elementable(
-        element_cls=pydantic.BaseModel,
+        element_cls=Model,
         units=dict(
             mass=unit.amu,
             covalent_radius=unit.angstrom
