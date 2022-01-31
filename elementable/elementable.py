@@ -193,7 +193,7 @@ class Elementable(type):
         json_file: str = resource_filename(__name__, "data/elements.json"),
         decimals: Optional[int] = 4,
     ):
-        pass
+        pass  # pragma: no cover
 
 
 Elements = Elementable()
