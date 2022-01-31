@@ -54,11 +54,22 @@ subclass with OpenForceField units.
 Installation
 ------------
 
-Elementable can be installed via pip.
+Elementable can be installed via pip or conda.
 
 .. code-block:: bash
 
    pip install elementable
+   # or
+   conda install -c conda-forge elementable
+
+
+Alternatively, you can download the repository and build from source.
+
+.. code-block:: bash
+
+   git clone https://github.com/lilyminium/elementable.git
+   cd elementable
+   python setup.py install
 
 
 .. toctree::

@@ -5,8 +5,11 @@ Yet another elements package
 [//]: # (Badges)
 [![GitHub Actions Build Status](https://github.com/lilyminium/elementable/workflows/CI/badge.svg)](https://github.com/lilyminium/elementable/actions?query=workflow%3ACI)
 [![codecov](https://codecov.io/gh/lilyminium/elementable/branch/master/graph/badge.svg)](https://codecov.io/gh/lilyminium/elementable/branch/main)
+[![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/elementable)]((https://anaconda.org/conda-forge/elementable))
 [![PyPI version](https://badge.fury.io/py/elementable.svg)](https://pypi.org/project/elementable/)
 [![Documentation Status](https://readthedocs.org/projects/elementable/badge/?version=latest)](https://elementable.readthedocs.io/en/latest/?badge=latest)
+
+[![Last release tag](https://img.shields.io/github/release-pre/lilyminium/elementable.svg)](https://github.com/lilyminium/elementable/releases) ![GitHub commits since latest release (by date) for a branch](https://img.shields.io/github/commits-since/lilyminium/elementable/latest)
 
 
 Elementable is *another* elements package defined in Python.
@@ -15,6 +18,22 @@ At its most minimal, it has no dependencies outside the main Python library.
 However, the real point of the package is to automagically work with a number of units, base classes, custom data, and be generally flexible.
 
 ### Usage
+
+Elementable can be installed via pip or conda:
+
+```
+pip install elementable
+# or
+conda install -c conda-forge elementable
+```
+
+Alternatively, you can download this repository and build from source:
+
+```
+git clone https://github.com/lilyminium/elementable.git
+cd elementable
+python setup.py install
+```
 
 #### Standard
 
