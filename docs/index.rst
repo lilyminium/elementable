@@ -67,6 +67,7 @@ Elementable can be installed via pip.
 
    getting_started
    customizing
+   elementable
 
 
 Indices and tables

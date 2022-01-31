@@ -33,6 +33,84 @@ def _resolve_multiple_types(type1, type2):
 
 
 class Elementable(type):
+    """Class factory for generating Elements in a container
+
+    Parameters
+    ----------
+        units: Dict[str, Any]
+            A dictionary of units multiplied with element data for the final value.
+            A key is an attribute (e.g. "mass").
+            A value should be a unit (e.g. unit.angstrom)
+        converters: Dict[str, Callable]
+            A dictionary of converters to transform element data.
+            A key is an attribute (e.g. "name").
+            A value is a function (e.g. ``lambda x: x.lower()``)
+        element_cls: Type
+            The base class that is subclassed to create an Element class.
+        json_file: str
+            The JSON file used to read in the data and create elements.
+            This should be formatted as a list of dictionaries.
+            Each key in the dictionary should be an attribute name.
+            Each value in the dictionary should be the corresponding data value.
+        decimals: int
+            The number of decimals to round floating point data to.
+            The rounding only occurs when registering elements in dictionaries,
+            or when searching for an element. No rounding occurs for the
+            attribute value on the ``Element``.
+            If ``None``, no rounding will occur.
+            If units are given, all values are converted into that unit
+            prior to roundind.
+        key_attr: str
+            The returned elements container will include all elements
+            as attributes for direct access. By default, key_attr="symbol",
+            meaning that the attributes are created from the element symbol.
+            The chosen key must correspond to string values on **each**
+            element, and **each value must be unique**.
+        key_transform: Callable
+            A function to transform the key for key_attr. This is useful
+            for values that are not valid Python identifiers.
+            For example, in the default Elements, the empty Element
+            (symbol="*") cannot be set as an attribute ``elements.*``.
+            The default ``key_transform`` function converts * to X.
+
+    Returns
+    -------
+        elements_container: namedtuple
+            This object holds all the created elements and registries.
+
+    Examples
+    --------
+        The most basic::
+
+            elements = Elementable()
+            assert elements.H is elements.registry.name["hydrogen"]
+            assert elements.O is elements(atomic_number=8)
+
+        Or with all bells and whistles::
+
+            from openff.units import unit
+            from pydantic import BaseModel
+
+            class Element(BaseModel):
+                class Config:
+                    # necessary for openff.unit type
+                    arbitrary_types_allowed = True
+
+            elements = Elementable(
+                units=dict(
+                    mass=unit.amu,
+                    covalent_radius=unit.angstrom
+                ),
+                element_cls=Element,
+                json_file="my_fancy_json_file.json",
+                decimals=10,
+                key_attr="name"
+            )
+
+            assert elements.hydrogen is elements.registry.atomic_number[1]
+
+
+    """
     def __new__(
         cls,
         units: Dict[str, Any] = {},
@@ -41,13 +119,16 @@ class Elementable(type):
             "symbol": lambda x: x.capitalize()
         },
         element_cls: Type = NamedTuple,
-        json_file: str = resource_filename(__name__, "data/elements.json"),
+        json_file: Optional[str] = None,
         decimals: Optional[int] = 4,
         key_attr: str = "symbol",
         key_transform: Callable = lambda x: x if x != "*" else "X",
     ):
 
         # ===== load elements from json =====
+        if json_file is None:
+            json_file = resource_filename(__name__, "data/elements.json")
+
         with open(str(json_file), "r") as f:
             contents = json.load(f)
 
