@@ -5,7 +5,7 @@ Yet another elements package
 [//]: # (Badges)
 [![GitHub Actions Build Status](https://github.com/lilyminium/elementable/workflows/CI/badge.svg)](https://github.com/lilyminium/elementable/actions?query=workflow%3ACI)
 [![codecov](https://codecov.io/gh/lilyminium/elementable/branch/master/graph/badge.svg)](https://codecov.io/gh/lilyminium/elementable/branch/main)
-[![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/elementable)]((https://anaconda.org/conda-forge/elementable))
+[![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/elementable)](https://anaconda.org/conda-forge/elementable)
 [![PyPI version](https://badge.fury.io/py/elementable.svg)](https://pypi.org/project/elementable/)
 [![Documentation Status](https://readthedocs.org/projects/elementable/badge/?version=latest)](https://elementable.readthedocs.io/en/latest/?badge=latest)
 
