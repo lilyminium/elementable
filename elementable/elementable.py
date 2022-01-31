@@ -150,7 +150,8 @@ class Elementable(type):
                 value /= units[key]
                 value = initial_attr_types[key](value)
 
-            if initial_attr_types[key] == float and decimals is not None:
+            if (initial_attr_types[key] == float
+                    and decimals is not None):
                 value = round(value, decimals)
 
             try:
@@ -158,25 +159,49 @@ class Elementable(type):
             except KeyError:
                 raise InvalidElementError(f"{key}={value}")
 
-        def _element_new(cls, **kwargs):
+        def _retrieve_element(cls, *args, **kwargs):
+            if not kwargs and args:
+                kwargs = {k: x for k, x in zip(attr_types, args)}
             if len(kwargs) == 1:
                 key = list(kwargs)[0]
                 return _get_key_and_value(
-                    key, kwargs[key], cls.registry.__getattribute__,
+                    key, kwargs[key], Elements.registry.__getattribute__,
                 )
 
             element_group = list(all_elements)
             for k, v in kwargs.items():
-                sub_group = _get_key_and_value(
-                    k, v, registries.__getitem__,
-                )
+                if v is not None:
+                    sub_group = _get_key_and_value(
+                        k, v, registries.__getitem__,
+                    )
                 element_group = [x for x in element_group if x in sub_group]
             return tuple(sorted(element_group, key=lambda x: x.atomic_number))
 
+        initial_new = Element.__new__
+
+        def _element_new(cls, *args, **kwargs):
+            if not len(kwargs):
+                return initial_new(cls, *args, **kwargs)
+            possibilities = _retrieve_element(cls, *args, **kwargs)
+            if isinstance(possibilities, Element):
+                return possibilities
+            n_possibilities = len(possibilities)
+            if n_possibilities == 1:
+                return possibilities[0]
+            if not n_possibilities or n_possibilities > 1:
+                return initial_new(cls, *args, **kwargs)
+            return possibilities
+
+        def dummy(self, **kwargs):
+            pass  # pragma: no cover
+
         n_elements = len(all_elements)
 
-        Elements.__call__ = _element_new
+        Element.__new__ = _element_new
+        Element.__init__ = dummy
+        Elements.__call__ = _retrieve_element
         Elements.n_elements = n_elements
+        Elements.element_class = Element
 
         Elements = Elements(*all_elements)
 

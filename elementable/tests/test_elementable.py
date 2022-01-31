@@ -1,5 +1,6 @@
 
-from tkinter import E
+import copy
+
 import pytest
 from elementable import Elements, Elementable
 
@@ -20,6 +21,11 @@ class TestStandardElementable(BaseTestElementable):
         assert len(els) == 5
         atomic_numbers = [el.atomic_number for el in els]
         assert atomic_numbers == [24, 46, 50, 51, 53]
+
+    def test_copy(self):
+        copied = copy.deepcopy(Elements.X)
+        assert copied == Elements.X
+        assert not copied is Elements.X
 
 
 class TestCustomElementable:
