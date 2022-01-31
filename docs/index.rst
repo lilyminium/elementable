@@ -25,22 +25,29 @@ I mostly envision Elementable being used in a separate ``elements.py``
 module in a library. For example, the below class creates a Pydantic BaseModel
 subclass with OpenForceField units.
 
-.. ipython::
+.. ipython:: python
 
    import elementable as elm
    from pydantic import BaseModel
    from openff.units import unit
+
+   class Element(BaseModel):
+      class Config:
+         arbitrary_types_allowed = True
+         json_encoders = {unit.Quantity: str}
 
    elements = elm.Elementable(
       units=dict(
          mass=unit.amu,
          covalent_radius=unit.angstrom,
       ),
-      element_cls=BaseModel
+      element_cls=Element
    )
 
    print(elements.H)
+   print(elements.H.mass)
    print(elements.H.json())
+   print(elements(mass=1.6735328346123168e-09 * unit.fg))
    
 
 ------------

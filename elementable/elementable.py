@@ -61,8 +61,8 @@ class Elementable(type):
                 initial_type = type(attr_value)
                 if attr_name in converters:
                     attr_value = converters[attr_name](attr_value)
-                # if attr_name in units and attr_value is not None:
-                #     attr_value = attr_value * units[attr_name]
+                if attr_name in units and attr_value is not None:
+                    attr_value = attr_value * units[attr_name]
                 attr_type = type(attr_value)
                 if attr_name in attr_types:
                     existing = attr_types[attr_name]
@@ -106,10 +106,12 @@ class Elementable(type):
             el = create(element_dictionary)
             for attr_name, registry in registries.items():
                 key = element_dictionary.get(attr_name)
-                if initial_attr_types[attr_name] == float and key is not None:
-                    if decimals is not None:
-                        key = round(key, decimals)
                 if key is not None:
+                    initial_type = initial_attr_types[attr_name]
+                    if attr_name in units:
+                        key = initial_type(key / units[attr_name])
+                    if initial_type == float and decimals is not None:
+                        key = round(key, decimals)
                     registry[key].append(el)
             all_elements.append(el)
 

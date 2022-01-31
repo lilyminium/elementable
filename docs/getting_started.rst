@@ -28,12 +28,14 @@ Each standard element is also available as an attribute.
 
     elm.Elements.Na
 
+
 Elements can also be directly retrieved from various registries of attributes.
 These can return single elements, such as from the atomic number:
 
 .. ipython:: python
 
     elm.Elements.registry.atomic_number[1]
+
 
 Or multiple elements, such as from the period.
 
