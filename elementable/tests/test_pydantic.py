@@ -38,6 +38,15 @@ class TestPydanticElementable(BaseTestElementable):
         }
         assert h.dict() == h_dict
 
+    def test_copy(self):
+        copied = self.element_class.X.copy(deep=True)
+        assert copied == self.element_class.X
+        assert not copied is self.element_class.X
+
+    def test_creation_get_existing(self):
+        new = self.element_class.element_class(symbol="H")
+        assert new is self.element_class.H
+
 
 @pytest.mark.skipif(not has_openff, reason="requires openff.units")
 class TestUnitPydanticElementable(BaseTestElementable):
