@@ -3,9 +3,9 @@ from unittest.mock import Mock
 
 import pytest
 
-from pyelementary import Elementary
+from elementable import Elementable
 
-from .base import BaseTestElementary
+from .base import BaseTestElementable
 
 pydantic = pytest.importorskip("pydantic")
 
@@ -18,9 +18,9 @@ else:
     has_openff = True
 
 
-class TestPydanticElementary(BaseTestElementary):
+class TestPydanticElementable(BaseTestElementable):
 
-    element_class = Elementary(
+    element_class = Elementable(
         element_cls=pydantic.BaseModel,
     )
 
@@ -40,10 +40,10 @@ class TestPydanticElementary(BaseTestElementary):
 
 
 @pytest.mark.skipif(not has_openff, reason="requires openff.units")
-class TestUnitPydanticElementary(BaseTestElementary):
+class TestUnitPydanticElementable(BaseTestElementable):
     from openff.units import unit
 
-    element_class = Elementary(
+    element_class = Elementable(
         element_cls=pydantic.BaseModel,
         units=dict(
             mass=unit.amu,

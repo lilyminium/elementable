@@ -2,10 +2,10 @@
 import pytest
 from hypothesis import given, strategies as st
 
-from pyelementary.exceptions import ElementaryError, InvalidElementError
+from elementable.exceptions import ElementableError, InvalidElementError
 
 
-class BaseTestElementary:
+class BaseTestElementable:
 
     @given(z=st.integers(min_value=0, max_value=117))
     def test_atomic_number(self, z):
@@ -52,7 +52,7 @@ class BaseTestElementary:
         assert len(pd5) == 18
 
     def test_get_period_error(self):
-        with pytest.raises(ElementaryError):
+        with pytest.raises(ElementableError):
             self.element_class(period=111)
 
     def test_get_period_and_group(self):

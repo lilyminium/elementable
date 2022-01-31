@@ -1,7 +1,7 @@
 Getting started
 ===============
 
-Elementary comes with standard elements defined, but there are a number of ways to customize the Elements class.
+Elementable comes with standard elements defined, but there are a number of ways to customize the Elements class.
 Please see :ref:`customizing-ref` for more.
 
 
@@ -9,7 +9,7 @@ For immediate usage, import :class:`Element`. Elements can be retrieved with :fu
 
 .. ipython:: python
 
-    import pyelementary as elm
+    import elementable as elm
     h = elm.Elements(atomic_number=1)
     print(h)
 

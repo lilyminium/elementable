@@ -1,15 +1,15 @@
 
-from .base import BaseTestElementary
-from pyelementary import Elementary
+from .base import BaseTestElementable
+from elementable import Elementable
 
 import pytest
 units = pytest.importorskip("openff.units")
 unit = units.unit
 
 
-class TestOpenFFElementary(BaseTestElementary):
+class TestOpenFFElementable(BaseTestElementable):
 
-    element_class = Elementary(
+    element_class = Elementable(
         units=dict(
             mass=unit.amu,
             covalent_radius=unit.angstrom

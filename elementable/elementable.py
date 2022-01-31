@@ -4,9 +4,9 @@ from pkg_resources import resource_filename
 from collections import namedtuple, defaultdict
 import json
 
-from .exceptions import InvalidElementError, ElementaryError
+from .exceptions import InvalidElementError, ElementableError
 
-__all__ = ["Elementary", "Elements"]
+__all__ = ["Elementable", "Elements"]
 
 
 NoneType = type(None)
@@ -32,7 +32,7 @@ def _resolve_multiple_types(type1, type2):
         return float
 
 
-class Elementary(type):
+class Elementable(type):
     def __new__(
         cls,
         units: Dict[str, Any] = {},
@@ -138,7 +138,7 @@ class Elementary(type):
             try:
                 registry = getter(key)
             except (AttributeError, KeyError):
-                raise ElementaryError(
+                raise ElementableError(
                     f"{key} attribute not supported. Available keys: "
                     ", ".join(sorted_attrs)
                 )
@@ -196,4 +196,4 @@ class Elementary(type):
         pass
 
 
-Elements = Elementary()
+Elements = Elementable()

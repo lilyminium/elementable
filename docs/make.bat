@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=pyelementary
+set SPHINXPROJ=elementable
 
 if "%1" == "" goto help
 

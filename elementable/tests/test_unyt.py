@@ -1,16 +1,16 @@
 import pytest
 
-from pyelementary import Elementary
+from elementable import Elementable
 
-from .base import BaseTestElementary
+from .base import BaseTestElementable
 
 pytest.importorskip("unyt")
 
 
-class TestUnytElementary(BaseTestElementary):
+class TestUnytElementable(BaseTestElementable):
     from unyt import amu, angstrom, fg, nm
 
-    element_class = Elementary(
+    element_class = Elementable(
         units=dict(
             mass=amu,
             covalent_radius=angstrom
