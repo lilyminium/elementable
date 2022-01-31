@@ -9,13 +9,13 @@ Yet another elements package
 [![Documentation Status](https://readthedocs.org/projects/elementable/badge/?version=latest)](https://elementable.readthedocs.io/en/latest/?badge=latest)
 
 
-Elementable is *another* elements package defined in Python. It is written to be usable with a number of different unit systems and classes. At its most minimal, it has no dependencies outside the main Python library. However, the real point of the package is to automagically work with a number of units classes and be generally flexible.
+Elementable is *another* elements package defined in Python. It is written to be usable with a number of different unit systems and classes. At its most minimal, it has no dependencies outside the main Python library. However, the real point of the package is to automagically work with a number of units, base classes, custom data, and be generally flexible.
 
 ### Usage
 
 #### Standard
 
-You can use Elementable immediately by importing the standard `Element` class. Please see the documentation for more. Each element is defined uniquely to allow for `is` comparisons.
+You can use Elementable immediately by importing the standard `Element` class. Please see the [documentation for information about customization](https://elementable.readthedocs.io/en/latest/customizing.html). Each element is defined uniquely to allow for `is` comparisons.
 
 ```ipython
 
