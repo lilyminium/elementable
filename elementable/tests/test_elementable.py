@@ -3,6 +3,7 @@ import copy
 
 import pytest
 from elementable import Elements, Elementable
+from elementable.exceptions import ElementableError
 
 from .base import BaseTestElementable
 from .datafiles import VEGETABLES_JSON
@@ -43,3 +44,10 @@ class TestCustomElementable:
 
         carrot2 = element_class(n_leaves=3)
         assert carrot is carrot2
+
+    def test_invalid_access(self, element_class):
+        with pytest.raises(
+            ElementableError,
+            match="parsnip attribute not supported",
+        ):
+            element_class(parsnip=3)
