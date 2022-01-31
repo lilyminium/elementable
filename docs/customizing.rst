@@ -73,7 +73,7 @@ NamedTuples were chosen as the Element base class as they are natively JSON-seri
 .. ipython:: python
 
     import json
-    h = elm.Element.registry.atomic_number[1]
+    h = elm.Elements.registry.atomic_number[1]
     json.dumps(h)
 
 
@@ -115,14 +115,21 @@ By default, Elementable creates elements from a file packaged in the library.
 This may not contain the best values for you.
 You can pass in ``json_file`` to create Elements from a different source.
 These can have *arbitrary* attributes.
+
+
+The data source may not have the ``symbol`` attribute normally used
+to categorize entries in the returned elements container.
+The ``key_attr`` keyword can be used to choose which attribute to use as a key.
+Note that the ``key_attr`` attribute **must** be a string value, and unique for each element.
+
+
 For a silly example:
 
 .. ipython:: python
 
     from elementable.tests.datafiles import VEGETABLES_JSON
-    Vegetables = elm.Elementable(json_file=VEGETABLES_JSON)
-    print(Vegetables(name="carrot"))
-    print(Vegetables.registry.name)
+    Vegetables = elm.Elementable(json_file=VEGETABLES_JSON, key_attr="name")
+    print(Vegetables.carrot)
 
 
 
