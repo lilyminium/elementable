@@ -13,5 +13,6 @@ dependencies:
   - pytest-xdist
   - pytest-cov
   - codecov
+  - numpy
 
 
